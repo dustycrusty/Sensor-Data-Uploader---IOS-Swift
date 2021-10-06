@@ -3,29 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66A21B13E54BCB20991E441C /* Pods_sensorUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EDF2BC27E6D23C97D9C9F0 /* Pods_sensorUpload.framework */; };
+		8713C4A526F9850100A454A4 /* APLGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713C4A326F9850100A454A4 /* APLGraphView.m */; };
+		8713C4A726F999A600A454A4 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713C4A626F999A600A454A4 /* DeviceTableViewCell.swift */; };
+		8713C4A926F99F1600A454A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8713C4A826F99F1600A454A4 /* GoogleService-Info.plist */; };
+		8727D5F626F7C38A001D5CB1 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8727D5F526F7C389001D5CB1 /* Entry.swift */; };
+		8727D5F926F84634001D5CB1 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8727D5F826F84634001D5CB1 /* ExternalAccessory.framework */; };
+		8727D5FB26F91206001D5CB1 /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8727D5FA26F91206001D5CB1 /* DevicesTableViewController.swift */; };
 		8756F17F26F7C003002A8FA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F17E26F7C003002A8FA4 /* AppDelegate.swift */; };
 		8756F18126F7C003002A8FA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F18026F7C003002A8FA4 /* SceneDelegate.swift */; };
-		8756F18326F7C003002A8FA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8756F18226F7C003002A8FA4 /* ViewController.swift */; };
 		8756F18626F7C003002A8FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8756F18426F7C003002A8FA4 /* Main.storyboard */; };
 		8756F18926F7C003002A8FA4 /* sensorUpload.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8756F18726F7C003002A8FA4 /* sensorUpload.xcdatamodeld */; };
 		8756F18B26F7C004002A8FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8756F18A26F7C004002A8FA4 /* Assets.xcassets */; };
 		8756F18E26F7C004002A8FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8756F18C26F7C004002A8FA4 /* LaunchScreen.storyboard */; };
+		87641CF426F9815300DCEE23 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87641CF326F9815300DCEE23 /* DeviceDetailViewController.swift */; };
+		876AE69126F7C11B00ADC01D /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876AE69026F7C11B00ADC01D /* Net.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27181B47C0099B7976A051CD /* Pods-sensorUpload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sensorUpload.release.xcconfig"; path = "Target Support Files/Pods-sensorUpload/Pods-sensorUpload.release.xcconfig"; sourceTree = "<group>"; };
+		83EDF2BC27E6D23C97D9C9F0 /* Pods_sensorUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sensorUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8713C4A126F9832600A454A4 /* sensorUpload-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sensorUpload-Bridging-Header.h"; sourceTree = "<group>"; };
+		8713C4A326F9850100A454A4 /* APLGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLGraphView.m; sourceTree = "<group>"; };
+		8713C4A426F9850100A454A4 /* APLGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLGraphView.h; sourceTree = "<group>"; };
+		8713C4A626F999A600A454A4 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		8713C4A826F99F1600A454A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8727D5F526F7C389001D5CB1 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		8727D5F726F84634001D5CB1 /* sensorUpload.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sensorUpload.entitlements; sourceTree = "<group>"; };
+		8727D5F826F84634001D5CB1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		8727D5FA26F91206001D5CB1 /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
 		8756F17B26F7C003002A8FA4 /* sensorUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sensorUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8756F17E26F7C003002A8FA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8756F18026F7C003002A8FA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8756F18226F7C003002A8FA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8756F18526F7C003002A8FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8756F18826F7C003002A8FA4 /* sensorUpload.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sensorUpload.xcdatamodel; sourceTree = "<group>"; };
 		8756F18A26F7C004002A8FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8756F18D26F7C004002A8FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8756F18F26F7C004002A8FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87641CF326F9815300DCEE23 /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
+		876AE69026F7C11B00ADC01D /* Net.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
+		C5976346DA65FD1C1CD44ED9 /* Pods-sensorUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sensorUpload.debug.xcconfig"; path = "Target Support Files/Pods-sensorUpload/Pods-sensorUpload.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +54,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8727D5F926F84634001D5CB1 /* ExternalAccessory.framework in Frameworks */,
+				66A21B13E54BCB20991E441C /* Pods_sensorUpload.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784885EE54C4C3323B11EBED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5976346DA65FD1C1CD44ED9 /* Pods-sensorUpload.debug.xcconfig */,
+				27181B47C0099B7976A051CD /* Pods-sensorUpload.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8713C4A226F9850100A454A4 /* Accelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				8713C4A326F9850100A454A4 /* APLGraphView.m */,
+				8713C4A426F9850100A454A4 /* APLGraphView.h */,
+			);
+			path = Accelerometer;
+			sourceTree = "<group>";
+		};
 		8756F17226F7C003002A8FA4 = {
 			isa = PBXGroup;
 			children = (
+				8713C4A226F9850100A454A4 /* Accelerometer */,
 				8756F17D26F7C003002A8FA4 /* sensorUpload */,
 				8756F17C26F7C003002A8FA4 /* Products */,
+				784885EE54C4C3323B11EBED /* Pods */,
+				C155FF839E939B6031201426 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +102,32 @@
 		8756F17D26F7C003002A8FA4 /* sensorUpload */ = {
 			isa = PBXGroup;
 			children = (
+				8727D5F726F84634001D5CB1 /* sensorUpload.entitlements */,
 				8756F17E26F7C003002A8FA4 /* AppDelegate.swift */,
 				8756F18026F7C003002A8FA4 /* SceneDelegate.swift */,
-				8756F18226F7C003002A8FA4 /* ViewController.swift */,
+				8713C4A826F99F1600A454A4 /* GoogleService-Info.plist */,
 				8756F18426F7C003002A8FA4 /* Main.storyboard */,
+				8713C4A626F999A600A454A4 /* DeviceTableViewCell.swift */,
 				8756F18A26F7C004002A8FA4 /* Assets.xcassets */,
 				8756F18C26F7C004002A8FA4 /* LaunchScreen.storyboard */,
 				8756F18F26F7C004002A8FA4 /* Info.plist */,
 				8756F18726F7C003002A8FA4 /* sensorUpload.xcdatamodeld */,
+				876AE69026F7C11B00ADC01D /* Net.swift */,
+				8727D5F526F7C389001D5CB1 /* Entry.swift */,
+				8727D5FA26F91206001D5CB1 /* DevicesTableViewController.swift */,
+				87641CF326F9815300DCEE23 /* DeviceDetailViewController.swift */,
+				8713C4A126F9832600A454A4 /* sensorUpload-Bridging-Header.h */,
 			);
 			path = sensorUpload;
+			sourceTree = "<group>";
+		};
+		C155FF839E939B6031201426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8727D5F826F84634001D5CB1 /* ExternalAccessory.framework */,
+				83EDF2BC27E6D23C97D9C9F0 /* Pods_sensorUpload.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8756F19226F7C004002A8FA4 /* Build configuration list for PBXNativeTarget "sensorUpload" */;
 			buildPhases = (
+				AF51BA662FD9EF2DDFE6E59A /* [CP] Check Pods Manifest.lock */,
 				8756F17726F7C003002A8FA4 /* Sources */,
 				8756F17826F7C003002A8FA4 /* Frameworks */,
 				8756F17926F7C003002A8FA4 /* Resources */,
+				C14F3573C9A40F7382630022 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8756F18E26F7C004002A8FA4 /* LaunchScreen.storyboard in Resources */,
+				8713C4A926F99F1600A454A4 /* GoogleService-Info.plist in Resources */,
 				8756F18B26F7C004002A8FA4 /* Assets.xcassets in Resources */,
 				8756F18626F7C003002A8FA4 /* Main.storyboard in Resources */,
 			);
@@ -135,13 +198,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF51BA662FD9EF2DDFE6E59A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sensorUpload-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C14F3573C9A40F7382630022 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sensorUpload/Pods-sensorUpload-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sensorUpload/Pods-sensorUpload-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sensorUpload/Pods-sensorUpload-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8756F17726F7C003002A8FA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8727D5FB26F91206001D5CB1 /* DevicesTableViewController.swift in Sources */,
+				8727D5F626F7C38A001D5CB1 /* Entry.swift in Sources */,
+				8713C4A526F9850100A454A4 /* APLGraphView.m in Sources */,
+				87641CF426F9815300DCEE23 /* DeviceDetailViewController.swift in Sources */,
 				8756F18926F7C003002A8FA4 /* sensorUpload.xcdatamodeld in Sources */,
-				8756F18326F7C003002A8FA4 /* ViewController.swift in Sources */,
+				8713C4A726F999A600A454A4 /* DeviceTableViewCell.swift in Sources */,
+				876AE69126F7C11B00ADC01D /* Net.swift in Sources */,
 				8756F17F26F7C003002A8FA4 /* AppDelegate.swift in Sources */,
 				8756F18126F7C003002A8FA4 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,9 +397,11 @@
 		};
 		8756F19326F7C004002A8FA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5976346DA65FD1C1CD44ED9 /* Pods-sensorUpload.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sensorUpload/sensorUpload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAGL6ABQX4;
 				INFOPLIST_FILE = sensorUpload/Info.plist;
@@ -299,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dusty.sensorUpload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sensorUpload/sensorUpload-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,9 +419,11 @@
 		};
 		8756F19426F7C004002A8FA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27181B47C0099B7976A051CD /* Pods-sensorUpload.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = sensorUpload/sensorUpload.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QAGL6ABQX4;
 				INFOPLIST_FILE = sensorUpload/Info.plist;
@@ -318,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dusty.sensorUpload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sensorUpload/sensorUpload-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
