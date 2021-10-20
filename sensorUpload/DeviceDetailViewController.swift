@@ -59,6 +59,23 @@ class DeviceDetailViewController: StaticDataTableViewController, UITextFieldDele
     
     @IBOutlet weak var activityText: UITextField!
     
+    
+    @IBOutlet weak var markAtBtnTimer:UIButton!
+    
+    
+    var markerArr:[Int64] = []
+    
+    
+    @IBAction func markAt(_ sender: Any) {
+        let curr = Date().toMillis()!
+        markerArr.append(curr)
+    }
+    
+    func startTimer() {
+        markerArr.removeAll()
+        
+    }
+    
     var sensorFusionData = [[String:Any]]()
     
     var streamingEvents: Set<OpaquePointer> = []
@@ -307,7 +324,15 @@ class DeviceDetailViewController: StaticDataTableViewController, UITextFieldDele
     }
     @IBAction func recordChanged(_ sender: UISwitch) {
         if sender.isOn {
+            
+            let txpower = Int8(0)
+            for device in devices {
+                mbl_mw_settings_set_tx_power(device.board, txpower)
+            }
+        
+            
             if recordTypeControl.selectedSegmentIndex == 0 {
+                startTimer()
                 resetSensorFusionPressed()
                 updateSensorFusionSettings()
                 sensorFusionStartLogPressed()
@@ -363,6 +388,9 @@ class DeviceDetailViewController: StaticDataTableViewController, UITextFieldDele
         let name = ":t:\(title)_\(dateString):a:\(actionType):v:\(recordTypeControl.selectedSegmentIndex):actionrep:\(activityText.text ?? "NONE PROVIDED")"
         
         Database.database().reference().child(name).setValue(data)
+        Database.database().reference().child(name + "_marker").setValue(markerArr)
+        
+        markerArr.removeAll()
     }
     
 
@@ -1642,4 +1670,18 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         return tap
     }
+}
+
+
+extension Date {
+
+    func toMillis() -> Int64! {
+        return Int64(self.timeIntervalSince1970 * 1000)
+    }
+
+    init(millis: Int64) {
+        self = Date(timeIntervalSince1970: TimeInterval(millis / 1000))
+        self.addTimeInterval(TimeInterval(Double(millis % 1000) / 1000 ))
+    }
+
 }

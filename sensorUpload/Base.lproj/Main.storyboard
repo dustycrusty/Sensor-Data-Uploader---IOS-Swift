@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="6Le-aD-DXx">
-                            <rect key="frame" x="0.0" y="0.0" width="415" height="354"/>
+                            <rect key="frame" x="0.0" y="0.0" width="415" height="400"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected to device(s):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDg-AC-HKM">
@@ -64,12 +64,12 @@
                                     </connections>
                                 </segmentedControl>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJR-wk-Agn">
-                                    <rect key="frame" x="20" y="319" width="60.5" height="23"/>
+                                    <rect key="frame" x="20" y="365" width="60.5" height="23"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="K5X-8A-qHw">
-                                    <rect key="frame" x="346" y="315" width="51" height="31"/>
+                                    <rect key="frame" x="346" y="361" width="51" height="31"/>
                                     <connections>
                                         <action selector="recordChanged:" destination="PW0-u9-rfT" eventType="valueChanged" id="qUC-7o-KUb"/>
                                     </connections>
@@ -95,20 +95,32 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qiv-fZ-RQy">
+                                    <rect key="frame" x="120.5" y="307" width="174" height="48"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="MARK">
+                                        <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="markAt:" destination="PW0-u9-rfT" eventType="touchUpInside" id="mmR-gT-bef"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="mG3-WR-fQQ" firstAttribute="width" secondItem="e5z-o9-mo5" secondAttribute="width" id="0pl-Oh-p9q"/>
+                                <constraint firstItem="yJR-wk-Agn" firstAttribute="top" secondItem="Qiv-fZ-RQy" secondAttribute="bottom" constant="10" id="4rT-vP-QHw"/>
                                 <constraint firstItem="0eO-76-sOV" firstAttribute="top" secondItem="nDg-AC-HKM" secondAttribute="bottom" constant="15" id="5rq-zz-sci"/>
                                 <constraint firstItem="qvc-gO-TqY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0eO-76-sOV" secondAttribute="trailing" constant="8" symbolic="YES" id="7Ed-GE-Rbg"/>
                                 <constraint firstAttribute="trailing" secondItem="qvc-gO-TqY" secondAttribute="trailing" constant="20" id="AXG-CJ-H7f"/>
                                 <constraint firstItem="nDg-AC-HKM" firstAttribute="leading" secondItem="6Le-aD-DXx" secondAttribute="leading" constant="20" id="Ahg-2k-EgX"/>
                                 <constraint firstItem="0eO-76-sOV" firstAttribute="leading" secondItem="6Le-aD-DXx" secondAttribute="leading" constant="20" id="Ati-ep-vdY"/>
+                                <constraint firstItem="Qiv-fZ-RQy" firstAttribute="centerX" secondItem="6Le-aD-DXx" secondAttribute="centerX" id="Bwa-zX-fhm"/>
                                 <constraint firstItem="9pY-Mh-HTp" firstAttribute="baseline" secondItem="YUd-tt-f2Y" secondAttribute="baseline" id="D0W-wr-Zc4"/>
                                 <constraint firstItem="mG3-WR-fQQ" firstAttribute="centerX" secondItem="e5z-o9-mo5" secondAttribute="centerX" id="F2R-Os-i9L"/>
                                 <constraint firstItem="9pY-Mh-HTp" firstAttribute="leading" secondItem="6Le-aD-DXx" secondAttribute="leading" constant="21" id="FbX-bR-Gqq"/>
                                 <constraint firstItem="Bkg-F3-8AH" firstAttribute="centerX" secondItem="6Le-aD-DXx" secondAttribute="centerX" id="HlA-0O-w3f"/>
-                                <constraint firstItem="yJR-wk-Agn" firstAttribute="top" secondItem="9pY-Mh-HTp" secondAttribute="bottom" constant="20" id="Isx-z7-iUr"/>
                                 <constraint firstItem="yJR-wk-Agn" firstAttribute="leading" secondItem="6Le-aD-DXx" secondAttribute="leading" constant="20" id="K51-Hd-7tB"/>
                                 <constraint firstItem="9pY-Mh-HTp" firstAttribute="width" secondItem="6Le-aD-DXx" secondAttribute="width" multiplier="0.432367" id="KHO-hP-AVB"/>
                                 <constraint firstItem="mG3-WR-fQQ" firstAttribute="top" secondItem="e5z-o9-mo5" secondAttribute="bottom" constant="14" id="OzQ-F8-Nwg"/>
@@ -118,6 +130,9 @@
                                 <constraint firstAttribute="bottom" secondItem="yJR-wk-Agn" secondAttribute="bottom" constant="12" id="cen-fr-9gK"/>
                                 <constraint firstItem="Bkg-F3-8AH" firstAttribute="top" secondItem="mG3-WR-fQQ" secondAttribute="bottom" constant="23" id="djG-Z7-0fo"/>
                                 <constraint firstItem="e5z-o9-mo5" firstAttribute="width" secondItem="6Le-aD-DXx" secondAttribute="width" multiplier="0.900966" id="f1t-Y6-bMC"/>
+                                <constraint firstItem="Qiv-fZ-RQy" firstAttribute="width" secondItem="6Le-aD-DXx" secondAttribute="width" multiplier="0.419277" id="fKp-3O-WXV"/>
+                                <constraint firstItem="Qiv-fZ-RQy" firstAttribute="height" secondItem="6Le-aD-DXx" secondAttribute="height" multiplier="0.12" id="fYg-g6-bxY"/>
+                                <constraint firstItem="Qiv-fZ-RQy" firstAttribute="top" secondItem="YUd-tt-f2Y" secondAttribute="bottom" constant="8" symbolic="YES" id="gBl-FX-Xfy"/>
                                 <constraint firstAttribute="trailing" secondItem="in2-MR-qUY" secondAttribute="trailing" constant="20" id="h2V-mI-a0I"/>
                                 <constraint firstItem="Bkg-F3-8AH" firstAttribute="width" secondItem="6Le-aD-DXx" secondAttribute="width" multiplier="0.884337" id="i2R-I1-c0S"/>
                                 <constraint firstItem="9pY-Mh-HTp" firstAttribute="top" secondItem="Bkg-F3-8AH" secondAttribute="bottom" constant="38" id="ki6-k0-F2W"/>
@@ -133,7 +148,7 @@
                             <tableViewSection headerTitle="Sensor Fusion" id="bb8-95-lsL">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="251" id="bql-1y-Xf8">
-                                        <rect key="frame" x="0.0" y="398.5" width="415" height="251"/>
+                                        <rect key="frame" x="0.0" y="444.5" width="415" height="251"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bql-1y-Xf8" id="paM-ub-qK6">
                                             <rect key="frame" x="0.0" y="0.0" width="415" height="251"/>
@@ -198,7 +213,7 @@
                             <tableViewSection headerTitle="Accelerometer BMI160 / BMI270" id="ObK-T9-8mT">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250.99999999999989" id="2oD-gt-xLr">
-                                        <rect key="frame" x="0.0" y="716.5" width="415" height="251"/>
+                                        <rect key="frame" x="0.0" y="762.5" width="415" height="251"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2oD-gt-xLr" id="fWb-EN-2H9">
                                             <rect key="frame" x="0.0" y="0.0" width="415" height="251"/>
@@ -265,7 +280,7 @@
                             <tableViewSection headerTitle="Gyroscope BMI160 / BMI270" id="t8X-AP-AJk">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="265" id="ctE-p3-1Qn">
-                                        <rect key="frame" x="0.0" y="1034.5" width="415" height="265"/>
+                                        <rect key="frame" x="0.0" y="1080.5" width="415" height="265"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ctE-p3-1Qn" id="zab-LY-OSJ">
                                             <rect key="frame" x="0.0" y="0.0" width="415" height="265"/>
@@ -350,6 +365,7 @@
                         <outlet property="gyroBMI160Cell" destination="ctE-p3-1Qn" id="xga-4d-V1l"/>
                         <outlet property="gyroBMI160Frequency" destination="uA2-j1-RlC" id="t61-vo-7s6"/>
                         <outlet property="gyroBMI160Scale" destination="Xl5-GO-m04" id="vjq-x4-Sif"/>
+                        <outlet property="markAtBtnTimer" destination="Qiv-fZ-RQy" id="Cws-Da-uWI"/>
                         <outlet property="recordTrigger" destination="K5X-8A-qHw" id="7k8-0m-KFX"/>
                         <outlet property="recordTypeControl" destination="e5z-o9-mo5" id="B2O-ll-C7O"/>
                         <outlet property="sensorFusionCell" destination="bql-1y-Xf8" id="lx4-UO-5ED"/>
@@ -502,6 +518,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
